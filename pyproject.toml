@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch]
+package = "src/dna_mutation_quantifier"
+
+[tool.hatch.build]
+sources = ["src"]
+include = [
+  "src",
+  "LICENSE",
+  "README.md",
+  "pytest"
+]
+
+
+[project]
+name = "xeniorn-dna_mutation_quantifier"
+version = "0.0.6"
+authors = [
+  { name="Juraj Ahel", email="juraj.ahel@gmail.com" },
+]
+description = "Quantification of Sanger traces"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+"biopython >= 1.81",
+"numpy >= 1.23.5",
+"matplotlib >= 3.7.1",
+"pandas >= 1.5.3"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/xeniorn/DnaMutationQuantifier"
+"Bug Tracker" = "https://github.com/xeniorn/DnaMutationQuantifier/issues"
+
